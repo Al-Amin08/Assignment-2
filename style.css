@@ -1,0 +1,307 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+/*------------
+    Media
+------------- */
+
+/* For mobile */
+
+@media screen and (max-width:480px) {
+    header >div{
+        
+       grid-template-columns: repeat(1,1fr);
+       
+
+
+    }
+}
+
+/* For Tablet */
+@media screen and (min-width:481px) and (max-width:768px) {
+    section{
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
+
+
+
+/*----------
+
+     header
+ --------------*/
+header {
+    display: flex;
+
+    background-color: #161616;
+    color: white;
+    margin: 60px 220px 30px 110px;
+    justify-content: center;
+    padding-top: 15px;
+    width: 1320px;
+    border-radius: 10px;
+
+
+}
+
+h1 {
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.header-detail {
+
+    
+    padding: 50px 50px 50px 110px;
+}
+
+.first-para {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-right: 180px;
+}
+
+.watch {
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    background-color: #DD0000;
+    color: white;
+    border-radius: 5px;
+
+}
+
+.watch:hover {
+    background-color: rgb(172, 182, 178);
+}
+
+.player{
+    padding-right: 190px ;
+}
+
+/*-----------------
+     section 
+  -------------*/
+section {
+    width: 1110px;
+    margin: 70px 220px 30px 210px;
+    padding-top: 70px;
+    display: flex;
+    column-gap: 100px;
+}
+
+.nav-bar {
+    width: 312px;
+    height: 312px;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+    background-color: #161616;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: -90px;
+
+
+
+}
+
+.nav-bar.bar {
+    width: 252px;
+    height: 64px;
+
+}
+
+.bar {
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.bar a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.blog,.upcoming {
+    background-color: #DD0000;
+    
+}
+
+
+.blog,.upcoming a {
+    color: white;
+}
+
+/* ==============
+      2nd part of the section 
+===================*/
+.blog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-left: -60px;
+    gap: 18px;
+}
+
+.button {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 10px;
+    border-radius: 2px;
+    border: 1px solid;
+}
+
+.news {
+    width: 289px;
+    height: 152px;
+    padding-top: 18px;
+    border: 2px solid rgb(213, 204, 204);
+    border-radius: 5px;
+    padding-left: 20px;
+    margin-top: -7px;
+}
+
+h3 {
+    padding-top: 10px;
+    padding-bottom: 15px;
+}
+
+.icons {
+    display: flex;
+    padding-top: 15px;
+}
+
+.icon-1 {
+    padding-left: 10px;
+}
+
+.icon {
+    padding-left: 50px;
+}
+
+span {
+    padding-left: 10px;
+}
+
+
+
+article {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+
+.flag{
+    display: flex;
+
+    padding-bottom:15px;
+
+}
+.flag h4{
+    padding: 20px 10px ;
+    font: 700;
+    font-size: 18px;
+}
+.flags-item{
+    border: 2px solid  rgb(213, 204, 204);
+    border-radius: 5px;
+    width: 289px;
+    height: 252px;
+    display: flex;
+    justify-content: center;
+    
+    align-items: center;
+}
+.flags-item p{
+    padding-left: 30px;
+}
+.flags-item h3{
+    padding-left: 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+/*--------------
+       Extra
+---------------- */
+
+.view-all {
+
+    text-align: center;
+    background-color: #DD0000;
+    padding: 20px 40px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+    display: none;
+}
+
+.view {
+    text-align: center;
+    margin-top: 140px;
+}
+
+/*----------
+     footer
+------------- */
+.goal {
+    color: white;
+    padding-bottom: 40px;
+    margin-top: -40px;
+}
+
+hr {
+    border-top: 1px solid rgb(113, 111, 111);
+}
+
+footer {
+    background-color: #161616;
+    margin-top: 150px;
+    padding: 100px;
+    text-align: center;
+
+}
+
+.footer {
+    display: flex;
+
+}
+
+.footer p {
+    padding-left: 112px;
+    padding-top: 50px;
+    color: white;
+
+}
+
+.social-icons {
+    display: flex;
+    padding-left: 362px;
+    padding-top: 55px;
+
+}
+
+.social-icons i {
+    font-size: 35px;
+    color: rgb(113, 111, 111);
+    padding-left: 102px;
+
+
+}
